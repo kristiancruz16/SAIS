@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SAIS.Controller.HomeController">
+   <children>
+      <Label alignment="CENTER" graphicTextGap="30.0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="1250.0" style="-fx-background-color: #00BFFF;" text="Home" AnchorPane.bottomAnchor="770.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <AnchorPane fx:id="graphPane" layoutX="30.0" layoutY="436.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="567.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="653.0" AnchorPane.topAnchor="436.0">
+         <children>
+            <Label alignment="CENTER" layoutX="140.0" prefHeight="50.0" prefWidth="409.0" text="Daily Sales last 7 Days" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="932.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="288.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.leftAnchor="932.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <GridPane layoutX="373.0" layoutY="4.0" prefHeight="196.0" prefWidth="274.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="274.0" text="What's Hot?">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTop1" alignment="CENTER" prefHeight="29.0" prefWidth="274.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblTop2" alignment="CENTER" prefHeight="30.0" prefWidth="274.0" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblTop3" alignment="CENTER" prefHeight="28.0" prefWidth="274.0" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="633.0" layoutY="379.0" prefHeight="29.0" prefWidth="587.0" text="Low Stock Report" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="633.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="288.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.leftAnchor="633.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="2.0" prefHeight="50.0" prefWidth="272.0" text="Today Sales" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodaySales" alignment="CENTER" layoutX="22.0" layoutY="52.0" prefHeight="113.0" prefWidth="264.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="30.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="567.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.leftAnchor="30.0">
+         <children>
+            <Label fx:id="lblFirstLastName" layoutX="62.0" prefHeight="50.0" prefWidth="409.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsername" layoutX="62.0" layoutY="45.0" prefHeight="25.0" prefWidth="162.0" AnchorPane.leftAnchor="62.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblConfirm" layoutX="64.0" layoutY="140.0" prefHeight="25.0" prefWidth="162.0" text="ConfirmPassword" visible="false" AnchorPane.leftAnchor="60.0" />
+            <Hyperlink layoutX="59.0" layoutY="81.0" onAction="#selectedLinkChangePassword" text="Change Password?" textFill="RED" underline="true" AnchorPane.leftAnchor="60.0" />
+            <PasswordField fx:id="passwordNew" layoutX="62.0" layoutY="107.0" prefHeight="36.0" prefWidth="210.0" promptText="Enter new password here" visible="false" AnchorPane.leftAnchor="60.0" />
+            <PasswordField fx:id="passwordConfirm" layoutX="62.0" layoutY="165.0" prefHeight="36.0" prefWidth="210.0" promptText="Confirm new password here" visible="false" AnchorPane.leftAnchor="60.0" />
+            <TextField fx:id="txtNew" layoutX="62.0" layoutY="107.0" prefHeight="36.0" prefWidth="210.0" promptText="Enter new password here" visible="false" />
+            <TextField fx:id="txtConfirm" layoutX="62.0" layoutY="165.0" prefHeight="36.0" prefWidth="210.0" promptText="Confirm new password here" visible="false" />
+            <CheckBox fx:id="chkShowPassword" layoutX="62.0" layoutY="205.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="124.0" text="Show Password" visible="false" wrapText="true" AnchorPane.leftAnchor="60.0" />
+            <Button fx:id="btnChange" layoutX="203.0" layoutY="204.0" mnemonicParsing="false" onAction="#selectedBtnChange" prefHeight="36.0" prefWidth="72.0" style="-fx-background-radius: 40px;" text="Change" visible="false" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableLowStock" fixedCellSize="0.0" layoutX="616.0" layoutY="396.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="587.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>

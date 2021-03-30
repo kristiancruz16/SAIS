@@ -1,0 +1,21 @@
+#Button{
+    -fx-background-radius :   40px;
+    -fx-min-width : 60px;
+    -fx-min-height : 60px;
+    -fx-max-height :60px;
+    -fx-max-width : 60px;
+    -fx-cursor : hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+#Button1{
+ -fx-background-radius :   50px;
+    -fx-min-width : 70px;
+    -fx-min-height : 70px;
+    -fx-max-height :70px;
+    -fx-max-width : 70px;
+    -fx-cursor : hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+#Button2{
+-fx-cursor : hand;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SAIS.Controller.QuantityController">
+   <children>
+      <TextField fx:id="txtQuantity" layoutX="241.0" layoutY="36.0" prefHeight="35.0" prefWidth="118.0" />
+      <ImageView fitHeight="78.0" fitWidth="111.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/question.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMessage" layoutX="108.0" layoutY="36.0" prefHeight="35.0" prefWidth="118.0" text="Enter Order Quantity" wrapText="true" />
+      <HBox alignment="CENTER" layoutX="-5.0" layoutY="103.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="387.0" spacing="20.0" style="-fx-background-color: #DCDCDC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnOkCancel" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#selectedBtn" prefHeight="35.0" prefWidth="70.0" style="-fx-background-radius: 40px;" text="Ok" />
+            <Button fx:id="btnOkCancel" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#selectedBtn" prefHeight="35.0" prefWidth="70.0" style="-fx-background-radius: 40px;" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

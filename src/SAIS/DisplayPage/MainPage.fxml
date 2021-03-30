@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.16733067729083664" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" stylesheets="@../CSS/border.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SAIS.Controller.MainPageController">
+  <items>
+    <AnchorPane fx:id="leftPane" style="-fx-background-color: #00BFFF;" stylesheets="@../CSS/border.css" SplitPane.resizableWithParent="false">
+         <children>
+            <GridPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="894.0" prefWidth="250.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="295.0" minHeight="-Infinity" prefHeight="151.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="731.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="-Infinity" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="762.0" minHeight="10.0" prefHeight="215.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnHome" alignment="TOP_LEFT" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Home" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSale" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Sale" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Sale2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnInventory" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Inventory" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Inventory1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReports" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Reports" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Reports1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReceiveOrder" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Receive Order" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/receiveorder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPurchaseOrder" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Purchase Order" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/purchaseorder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnProduct" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Product" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCustomer" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Customer" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSupplier" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Supplier" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/supplier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAdmin" alignment="TOP_LEFT" disable="true" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtn" prefHeight="52.0" prefWidth="237.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 40px; -fx-cursor: hand;" text="Admin" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/admin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="TOP_LEFT" graphicTextGap="0.0" prefHeight="92.0" prefWidth="218.0" text="Concept  Store" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="83.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <GridPane alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="241.0" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="61.0" minHeight="0.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblDate" alignment="BOTTOM_LEFT" text="Sat Feb 20 16:07:08 CST 2021" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button id="Button2" fx:id="btnLogOut" alignment="TOP_LEFT" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectLogOut" prefHeight="42.0" prefWidth="247.0" style="-fx-background-color: #00BFFF;" stylesheets="@../CSS/circlebutton.css" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="48.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+    <AnchorPane fx:id="rightPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="900.0" prefWidth="1250.0" SplitPane.resizableWithParent="false" />
+  </items>
+</SplitPane>

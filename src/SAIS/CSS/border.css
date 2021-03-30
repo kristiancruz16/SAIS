@@ -1,0 +1,6 @@
+.split-pane-divider {
+    -fx-border-style: none;
+    -fx-border-width: 0px;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

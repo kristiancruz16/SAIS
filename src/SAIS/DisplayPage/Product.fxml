@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SAIS.Controller.ProductController">
+   <children>
+      <Label alignment="CENTER" graphicTextGap="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="1250.0" style="-fx-background-color: #00BFFF;" text="Product" textAlignment="CENTER" AnchorPane.bottomAnchor="770.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="130.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Product.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="158.0" layoutY="193.0" prefHeight="624.0" prefWidth="612.0" style="-fx-border-color: black; -fx-border-width: 3px;">
+         <children>
+            <GridPane layoutX="89.0" layoutY="35.0" prefHeight="540.0" prefWidth="453.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="199.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="255.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Category">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Supplier" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Product ID No." GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Product Name" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Description" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Critical Level" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Buying Price" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="85.0" text="Selling Price" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCategory" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="txtSupplier" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="txtProductIDNo" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="txtProductName" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="txtDesc" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="txtCriticalLevel" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="txtBuyingPrice" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <JFXTextField fx:id="txtSellingPrice" alignment="CENTER" editable="false" opacity="0.5" prefHeight="25.0" prefWidth="244.0" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <Button id="Button2" fx:id="btnSearchSup" contentDisplay="CENTER" disable="true" layoutX="535.0" layoutY="111.0" maxWidth="38.0" mnemonicParsing="false" onAction="#selectedBtnSearchSup" prefHeight="30.0" prefWidth="38.0" style="-fx-background-radius: 40px; -fx-min-width: 40px; -fx-min-height: 40px; -fx-max-height: 40px; -fx-max-width: 40px;" stylesheets="@../CSS/circlebutton.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="Button2" fx:id="btnSearchCat" contentDisplay="CENTER" disable="true" layoutX="535.0" layoutY="41.0" maxWidth="38.0" mnemonicParsing="false" onAction="#selectedBtnSearchCat" prefHeight="30.0" prefWidth="38.0" style="-fx-background-radius: 40px; -fx-min-width: 40px; -fx-min-height: 40px; -fx-max-height: 40px; -fx-max-width: 40px;" stylesheets="@../CSS/circlebutton.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" layoutX="862.0" layoutY="193.0" prefHeight="624.0" prefWidth="244.0" spacing="20.0" AnchorPane.topAnchor="181.0">
+         <children>
+            <Button id="Button2" fx:id="btnSave" disable="true" graphicTextGap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnSave" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="Save">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Save.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="Button2" fx:id="btnNewCategory" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnCategory" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="New Category">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/category.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="Button2" fx:id="btnNew" graphicTextGap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnNew" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="New">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="Button2" fx:id="btnSearch" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnSearch" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="Search">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="Button2" fx:id="btnEdit" graphicTextGap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnEdit" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="Edit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="Button2" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectedBtnDelete" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 40px;" stylesheets="@../CSS/circlebutton.css" text="Delete">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
